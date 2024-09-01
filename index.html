@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/cocorysalesmanagement/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="salesmanagement">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>salesmanagement</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase 설정 추가 -->
+  <meta name="google-signin-client_id" content="523491057059-lk4au6ioa2n949k9qft1nc92n751c2fq.apps.googleusercontent.com" />
+
+  <!-- Firebase SDK를 포함합니다 -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+  <!-- Firebase 초기화 -->
+  <script type="module">
+    const firebaseConfig = {
+      apiKey: "AIzaSyBWxu2eVQmpePHxK1Hc85iXD0Kuc01vxNE",
+      authDomain: "salesmanagement-c1ab9.firebaseapp.com",
+      projectId: "salesmanagement-c1ab9",
+      storageBucket: "salesmanagement-c1ab9.appspot.com",
+      messagingSenderId: "523491057059",
+      appId: "1:523491057059:web:83bdad3749f4670e824e16"
+    };
+
+    // Firebase 초기화
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js';
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  </script>
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
